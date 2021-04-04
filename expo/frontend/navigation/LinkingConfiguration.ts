@@ -16,6 +16,7 @@ export default {
               TabTwoScreen: 'two',
             },
           },
+
         },
       },
       NotFound: '*',
