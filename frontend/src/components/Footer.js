@@ -6,7 +6,7 @@ class Footer extends React.Component {
       <footer className="py-5 bg-dark">
         <div className="container">
           <p className="m-0 text-center text-white">
-          これはこれでHTMLタグタグつかえれるといいdddddddddddsssssssssssssssssssssssssssssss
+          これはこれでHTMLwwwwwwwwwwwwwwwwwタ66666666666666666666eeeeeeeeeグタグつかえれるといいddddddddddssssdddddddddddddddddsssssssssssssssssssssssssssssss
             Built by <a href="https://www.accordbox.com/">kenichi miyata</a>
           </p>
         </div>
