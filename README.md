@@ -2,6 +2,10 @@
 
 This project is from book [Build SPA with React and Wagtail](https://leanpub.com/react-wagtail)
 
+フォルダーを移動して、REACTNATIVEWEBも設定
+WORKDIR /package.son
+
+
 ## Objectives
 
 This book will teach you how to build a `SPA` (single-page application) using `React` and `Wagtail CMS`.
