@@ -6,6 +6,8 @@ This project is from book [Build SPA with React and Wagtail](https://leanpub.com
 WORKDIR /package.son
 
 
+http://35.72.50.16:6089/graphql
+
 ## Objectives
 
 This book will teach you how to build a `SPA` (single-page application) using `React` and `Wagtail CMS`.

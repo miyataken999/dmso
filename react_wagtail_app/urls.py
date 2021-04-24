@@ -22,7 +22,8 @@ from wagtail.admin import urls as wagtailadmin_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
 from blog.api import blog_router, cms_api_router
-
+#from grapple import urls as grapple_urls
+from grapple import urls as grapple_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,6 +33,7 @@ urlpatterns = [
 
     path('api/blog/', include(blog_router.urls)),
     path('api/cms/', cms_api_router.urls),
+    path(r"", include(grapple_urls)),
 
     # For anything not caught by a more specific rule above, hand over to
     # Wagtail's serving mechanism
@@ -41,4 +43,5 @@ urlpatterns = [
 
 if settings.DEBUG:
     from django.conf.urls.static import static
+    from django.contrib.staticfiles.urls import staticfiles_urlpatterns
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

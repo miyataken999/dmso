@@ -26,6 +26,11 @@ from wagtail.core.fields import StreamField
 from wagtail_headless_preview.models import HeadlessPreviewMixin
 from .blocks import BodyBlock
 from .fields import CategoryField, TagField
+from grapple.models import (
+    GraphQLString,
+    GraphQLStreamfield,
+)
+
 
 
 class BasePage(HeadlessPreviewMixin, Page):
@@ -41,6 +46,11 @@ class BlogPage(BasePage):
 
     def serve(self, request, *args, **kwargs):
         return HttpResponseRedirect(self.get_client_root_url())
+        
+    # Note these fields below:
+    graphql_fields = [
+        GraphQLString("description"),
+    ]        
 
 
 class PostPage(BasePage):

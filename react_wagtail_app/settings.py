@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "&nl8s430j^j8l*je+m&ys5dv#zoy)0a2+x1!m
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get("DEBUG", default=1))
 
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "bpms,bpmboxes.com:8002").split(" ")
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "35.72.50.16:8002").split(" ")
 
 
 # Application definition
@@ -159,7 +159,12 @@ REST_FRAMEWORK = {
 }
 
 HEADLESS_PREVIEW_CLIENT_URLS = {
-    "default": os.environ.get("FRONTEND_BASE_URL", "http://bpms.bpmboxes.com:3000/"),
+    "default": os.environ.get("FRONTEND_BASE_URL", "http://35.72.50.16:3000/"),
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+# Grapple Config:
+GRAPHENE = {"SCHEMA": "grapple.schema.schema"}
+GRAPPLE_APPS = {"images": "", "home": "", "documents": ""}
+GRAPPLE_ADD_SEARCH_HIT = True

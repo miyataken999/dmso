@@ -9,7 +9,7 @@ class BlogPage extends React.Component {
   render() {
     return (
       <div>
-          sssssssssssssssssssssssssssssssss
+
         <TopNav />
         <Container>
           <Row>
