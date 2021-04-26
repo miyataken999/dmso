@@ -3,6 +3,7 @@ import { Story, Meta } from '@storybook/react';
 
 import { Page, PageProps } from './Page';
 import * as HeaderStories from './Header.stories';
+import Pokedex from "./examples/12-pokedex/Pokedex";
 
 export default {
   title: 'Example/Page',
@@ -10,13 +11,12 @@ export default {
 } as Meta;
 
 const Template: Story<PageProps> = (args) => <Page {...args} />;
+import Template2: Story () => <Pokedex />;
+
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
   ...HeaderStories.LoggedIn.args,
 };
 
-export const LoggedOut = Template.bind({});
-LoggedOut.args = {
-  ...HeaderStories.LoggedOut.args,
-};
+export const LoggedOut = Template2.bind({});

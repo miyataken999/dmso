@@ -41,3 +41,19 @@ export const Example2 = () => {
     </MemoryRouter>
   );
 };
+
+
+export const チャット = () => {
+  const mock = new MockAdapter(axios);
+  mockPost(mock);
+  mockTag(mock);
+  mockCategory(mock);
+
+  return (
+    <MemoryRouter initialEntries={['/post/3/']}>
+      <Switch>
+        <Route path="/post/:id" component={PostPage}/>
+      </Switch>
+    </MemoryRouter>
+  );
+};

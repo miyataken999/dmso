@@ -49,14 +49,18 @@ class PostDetail extends React.Component {
 
       return (
         <div className="col-md-8">
+        たぐｓｓｓ　めも　チャットｄｄｄｄｄｄｄｄｄｄｄｄｄ
+                sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
           <img
             src={post.header_image_url.url}
             className="img-fluid rounded"
             alt=""
           />
           <hr />
-          <h1>{post.title}</h1>
-          <hr />
+          たいとるがないなー
+          {JSON.stringify(post)}
+          <h1>{post.title}ｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓ</h1>
+          <hr />ｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓｓ
           <StreamField value={post.body} />
         </div>
       );

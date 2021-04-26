@@ -2,6 +2,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
 import { Button, ButtonProps } from './Button';
+//import Pokedex from "../examples/12-pokedex/Pokedex";
 
 export default {
   title: 'Example/Button',
@@ -12,6 +13,7 @@ export default {
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+//const Template2: Story = () => <Pokedex />;
 
 export const Primary = Template.bind({});
 Primary.args = {
