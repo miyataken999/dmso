@@ -10,6 +10,18 @@ reactnative example
 
 ローコードでどこまでいけるか
 
+## wagtail ベースでまとめる
+- 統一して　開発しながらまずドキュメントを作成する
+
+統一して　開発しながらまずドキュメントを作成する	First create a document with the United Development to	統一して　開発しながらまずドキュメントを作成する
+
+https://www.bpmchat.com
+
+
+- firebase
+- datastdio
+- aws
+
 http://35.72.50.16:6089/graphql
 
 ## Objectives
