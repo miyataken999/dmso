@@ -1,5 +1,8 @@
 ## Introduction
 
+1. フロントＵＲＬ
+2. バックエンドＵＲＬ
+
 This project is from book [Build SPA with React and Wagtail](https://leanpub.com/react-wagtail)
 
 フォルダーを移動して、REACTNATIVEWEBも設定
